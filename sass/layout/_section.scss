@@ -1,0 +1,43 @@
+.section{
+    grid-column:  1 / -1;
+    display: grid;
+    grid-template-columns: 
+    [full-start] minmax(5rem, 1fr) repeat(8, [col-start] 1fr [col-end]) minmax(5rem, 1fr) [full-end];
+    grid-template-rows: repeat(5, 1fr);
+    
+    &__img{
+        background-image: url(../images/desktop/image-interactive.jpg);
+        background-size: cover;
+        background-position: center;
+        grid-column: 2 / 6;
+        grid-row: 2 / 5;
+        width: 110%;
+    }
+
+    &__text{
+        z-index: 1;
+        grid-column: 5 / 10;
+        grid-row: 3 / 5;
+        margin-left: 2.5rem;
+        background-color: var(--clr-white);
+
+        display: flex;
+        flex-direction: column;
+        padding: 2.5rem 0 0 4rem;
+    }
+    
+    &__title{   
+        color: var(--clr-black);
+        text-transform: uppercase;
+        font-size: 2.25rem;
+        line-height: 1;
+        font-weight: 300;
+        margin-bottom: .5rem;
+    }
+
+    &__paragraph{
+        color: var(--clr-dark);
+        font-size: .72rem;
+        line-height: 1.55;
+    }
+}
