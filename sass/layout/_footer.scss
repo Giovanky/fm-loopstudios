@@ -8,7 +8,8 @@
     grid-template-rows: max-content max-content;
     justify-content: center;
     align-items: center;
-    padding: 1.2rem 0;
+    padding: 2.4rem 0;
+    grid-gap: 2.4rem;
 
     &__logo{
         grid-column: col-start 1 / col-end 1;
@@ -22,7 +23,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 20rem;
+        width: 32rem;
     }
     
     &__item{
@@ -32,7 +33,7 @@
     
     &__link{
         font-family: 'Alata';
-        font-size: .8rem;
+        font-size: 1.4rem;
         color: currentColor;
         text-decoration: none;
 
@@ -51,18 +52,14 @@
 
     &__icon{
         fill: var(--clr-white);
-        width: 1.5rem;
-        height: 1.5rem;
+        width: 4rem;
+        height: 4rem;
     }
-
-
-
-
 
     &__copyright{
         grid-column: col-start 2 / col-end 2;
         grid-row: 2 / 3;
         justify-self: end;
-        font-size: .8rem;
+        font-size: 1.6rem;
     }
 }

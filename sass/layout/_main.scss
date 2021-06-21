@@ -6,24 +6,24 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding-bottom: 3rem;
+        padding-bottom: 4.8rem;
     }
 
     &__title{
         color: var(--clr-black);
         font-weight: 300;
-        font-size: 2rem;
+        font-size: 4rem;
     }
 
     &__button{
-        font-size: .65rem;
+        font-size: 1.6rem;
         text-transform: inherit;
         background-color: var(--clr-black);
         border: 1px solid var(--clr-black);;
         color: var(--clr-white);
         letter-spacing: .2rem;
         font-family: 'Josefin Sans';
-        padding: .75rem 1.6rem;
+        padding: 1.6rem 2.4rem;
         font-weight: 700;
         transition: 
             background-color .25s ease-in,
@@ -37,11 +37,10 @@
 
     &__catalog{
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
         grid-template-rows: repeat(2, minmax(18rem, 1fr));
-        width: 100%;
-        column-gap: 1.5rem;
-        row-gap: 1.5rem;
+        column-gap: 2.4rem;
+        row-gap: 2.4rem;
 
     }
 
@@ -73,8 +72,8 @@
         position: absolute;
         z-index: 1;
         bottom: 0;
-        padding: 1.5rem;
-        font-size: 1.3rem;
+        padding: 1.6rem;
+        font-size: 3.25rem;
         line-height: 1;
     }
 }
